@@ -9,7 +9,10 @@ export function listar(req,res){
         .then(function (testi){
             res.render(
                 'testimonios', // vista
-                { lista: testi }
+                { lista: testi/*.filter(function (element){ //modelo
+                        return element.deleted != true
+                    })*/
+                }
             );
         })
         .catch(function (err){
