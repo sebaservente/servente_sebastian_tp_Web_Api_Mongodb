@@ -5,9 +5,6 @@ import routerAPi from './routers/api.js';
 import routerWeb from './routers/instRouterWeb.js';
 import express from 'express';
 
-/*import mongodb from 'mongodb';*/
-import path from "path";
-import fs from 'fs';
 
 // creo la aplicacion
 const app = express();
